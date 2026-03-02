@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CardCarona from "./assets/components/cardcarona/CardCarona";
-import Footer from "./assets/components/footer/Footer";
-import Navbar from "./assets/components/navbar/NavBar";
-import Home from "./assets/pages/Home";
 
-function App() {
+import { Footer } from "./assets/components/footer/Footer";
+import { Home } from "./assets/pages/Home";
+import { Navbar } from "./assets/components/navbar/NavBar";
+import CardCarona from "./assets/components/cardcarona/CardCarona";
+
+
+export function App() {
   return (
     <>
       <BrowserRouter>
@@ -20,5 +22,3 @@ function App() {
     </>
   );
 }
-
-export default App;

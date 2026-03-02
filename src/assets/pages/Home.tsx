@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { FaVanShuttle } from "react-icons/fa6";
 
-function Home() {
+export function Home() {
   return (
     <div className="container w-4/5 mx-auto">
       <div className=" flex justify-between gap-3 my-6">
@@ -182,5 +182,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
