@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="flex container justify-around  items-center p-5">
+    <div className="flex container justify-around mx-auto items-center p-5">
       <img src="/img/logo.png" alt="logo" className="w-35 items-center" />
 
       <div className="flex justify-between gap-8">
