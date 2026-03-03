@@ -1,7 +1,6 @@
-function CardCarona() {
+export function CardCarona() {
   return (
     <div className="flex flex-col w-[20rem] justify-center mx-auto shadow-2xl rounded-2xl overflow-hidden pb-4">
-      {/* Imagem destino */}
       <div className="">
         <img
           className="flex justify-center"
@@ -16,15 +15,14 @@ function CardCarona() {
           <div className="border rounded-full p-1"></div>
         </div>
         <div className="py-2 font-bold text-slate-900">
-          {/* Origem */}
           <h1>João Pessoa</h1>
-
-          {/* Destino */}
           <h1>Recife</h1>
         </div>
       </div>
       <div className="px-4 font-bold text-slate-900">
-        <p className="text-center mb-2 pb-[.2rem] items-center rounded-lg w-25  bg-green-800 text-white ">Promoção</p>
+        <p className="text-center mb-2 pb-[.2rem] items-center rounded-lg w-25  bg-green-800 text-white ">
+          Promoção
+        </p>
         <p>A partir de</p>
         <h1 className="text-3xl">
           R$:23<span className="pt-2 text-sm">,75</span>
@@ -33,5 +31,3 @@ function CardCarona() {
     </div>
   );
 }
-
-export default CardCarona;
