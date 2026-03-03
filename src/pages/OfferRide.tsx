@@ -63,9 +63,17 @@ export default function OfferRide() {
       const payload = {
         origem: formData.origem,
         destino: formData.destino,
+        Foto_destino:""
         vagas_disponiveis: Number(formData.vagas_disponiveis),
-        Foto_destino: "",
         valor: Number(formData.valor),
+        motorista: {
+          id: motoristaData.id,
+          nome: motoristaData.nome,
+          cpf: motoristaData.cpf,
+          usuario: motoristaData.usuario, // Seu email está aqui
+          telefone: motoristaData.telefone,
+          nota_avaliacao: Number(motoristaData.nota_avaliacao) || 5,
+        },
       };
 
       setCarregando(true);
