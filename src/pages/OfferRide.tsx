@@ -63,8 +63,7 @@ export default function OfferRide() {
       const payload = {
         origem: formData.origem,
         destino: formData.destino,
-        Foto_destino:""
-        vagas_disponiveis: Number(formData.vagas_disponiveis),
+        Foto_destino: "",
         valor: Number(formData.valor),
         motorista: {
           id: motoristaData.id,
