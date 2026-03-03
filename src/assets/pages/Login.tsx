@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../contexts/useAuth";
-import api from "../services/api";
+import { api } from "../services/api";
 
-export default function Login() {
+export function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
@@ -37,12 +37,10 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
-
         <div className="flex flex-col items-center mb-6">
-        <img src="/img/logo.png" alt="logo" className="w-35 mb-2" />
-        <p className="text-gray-400 text-sm mt-1">Sua carona começa aqui</p>
-          </div>
-
+          <img src="/img/logo.png" alt="logo" className="w-35 mb-2" />
+          <p className="text-gray-400 text-sm mt-1">Sua carona começa aqui</p>
+        </div>
 
         <h2 className="text-lg font-semibold text-center text-gray-700 mb-4">
           Entrar na conta
@@ -61,7 +59,6 @@ export default function Login() {
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
           </div>
-
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">
               Senha
@@ -75,9 +72,7 @@ export default function Login() {
             />
           </div>
 
-          {erro && (
-            <p className="text-red-500 text-sm text-center">{erro}</p>
-          )}
+          {erro && <p className="text-red-500 text-sm text-center">{erro}</p>}
 
           <button
             type="submit"

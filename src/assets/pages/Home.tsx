@@ -25,15 +25,12 @@ export function Home() {
             <div className="p-3  border-2 border-orange-500 rounded-full ">
               <FaCar size={30} className="text-orange-500" />
             </div>
-
             <div className="p-3  border-2 border-orange-500 rounded-full ">
               <FaBus size={30} className="text-orange-500" />
             </div>
-
             <div className="p-3  border-2 border-orange-500 rounded-full ">
               <FaVanShuttle size={30} className="text-orange-500" />
             </div>
-
             <div className="p-3  border-2 border-orange-500 rounded-full ">
               <FaTrain size={30} className="text-orange-500" />
             </div>
@@ -79,7 +76,6 @@ export function Home() {
             placeholder="1 Passageiro"
           />
         </div>
-
         <button className="bg-orange-500 w-1/5 h-full text-white rounded-r-2xl cursor-pointer hover:bg-orange-600 p-3">
           Pesquisar
         </button>
@@ -94,7 +90,6 @@ export function Home() {
           menor custo de viagem. É simples: compartilhe sua viagem e encontre
           passageiros para dividir as despesas de combustível e pedágio.
         </p>
-
         <button className="bg-white rounded-2xl p-4 w-1/3 font-bold text-md mx-auto text-black cursor-pointer hover:bg-cyan-50">
           Oferecer carona
         </button>
@@ -111,7 +106,6 @@ export function Home() {
             <h3 className="font-bold text-4xl text-cyan-900">
               Avaliações Automáticas. Mais viagens confiáveis.
             </h3>
-
             <p>
               Estamos lançando as Avaliações Automáticas para tornar os perfis
               mais justos e precisos. Se nenhuma avaliação for deixada após 14
@@ -121,7 +115,6 @@ export function Home() {
               Assim, os perfis ficam mais precisos para que você possa reservar
               com mais confiança!
             </p>
-
             <button className="rounded-3xl bg-amber-500 text-white p-4 cursor-pointer w-1/7">
               Partiu!
             </button>
@@ -138,17 +131,15 @@ export function Home() {
             <h3 className="font-bold text-4xl text-cyan-900">
               Clientes Satisfeitos
             </h3>
-
             <p>
               "Sempre tive receio de viajar sem ser no meu próprio carro, mas o
               MeLeva mudou totalmente minha visão. A economia foi o ponto alto:
-              sobrou muito mais dinheiro para aproveitar o destino! <br />
-              Além de ser super barato, a viagem foi leve e divertida. Fomos
-              curtindo a paisagem pela janela, batendo papo e sem aquele
-              estresse de dirigir por horas. Recomendo demais para quem quer
-              viajar com os amigos e economizar de verdade. Nota 10!"
+              sobrou muito mais dinheiro para aproveitar o destino! Além de ser
+              super barato, a viagem foi leve e divertida. Fomos curtindo a
+              paisagem pela janela, batendo papo e sem aquele estresse de
+              dirigir por horas. Recomendo demais para quem quer viajar com os
+              amigos e economizar de verdade. Nota 10!"
             </p>
-
             <button className="rounded-3xl bg-amber-500 text-white p-4 cursor-pointer w-1/7">
               Partiu!
             </button>
@@ -165,14 +156,12 @@ export function Home() {
             <h3 className="font-bold text-4xl text-cyan-900">
               R$ 2000 por ano só de gasolina!
             </h3>
-
             <p>
               "A MeLeva mudou tudo para mim. Minha viagem de rotina de 180 km
               custava R$95 só de gasolina. Agora, com a BlaBlaCar, eu recupero
               cerca de R$75 em cada viagem. Fazendo isso duas vezes por mês,
               economizo quase R$2000 por ano só de gasolina!"
             </p>
-
             <button className="rounded-3xl bg-amber-500 text-white p-4 cursor-pointer w-1/7">
               Partiu!
             </button>

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import api from "../services/api";
+import { api } from "../services/api";
 
-export default function Cadastro() {
+export function Cadastro() {
   const [form, setForm] = useState({
     nome: "",
     cpf: "",
@@ -42,12 +42,10 @@ export default function Cadastro() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
-
         <div className="flex flex-col items-center mb-6">
-        <img src="/img/logo.png" alt="logo" className="w-35 mb-2" />
-        <p className="text-gray-400 text-sm mt-1">Crie sua conta</p>
-      </div>
-
+          <img src="/img/logo.png" alt="logo" className="w-35 mb-2" />
+          <p className="text-gray-400 text-sm mt-1">Crie sua conta</p>
+        </div>
 
         <form onSubmit={handleCadastro} className="flex flex-col gap-4">
           <div>
@@ -63,7 +61,6 @@ export default function Cadastro() {
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
           </div>
-
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">
               CPF
@@ -77,7 +74,6 @@ export default function Cadastro() {
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
           </div>
-
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">
               E-mail
@@ -91,7 +87,6 @@ export default function Cadastro() {
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
           </div>
-
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">
               Telefone
@@ -106,9 +101,7 @@ export default function Cadastro() {
             />
           </div>
 
-          {erro && (
-            <p className="text-red-500 text-sm text-center">{erro}</p>
-          )}
+          {erro && <p className="text-red-500 text-sm text-center">{erro}</p>}
 
           <button
             type="submit"
