@@ -4,7 +4,6 @@ import { FaVanShuttle } from "react-icons/fa6";
 import CarrosselCaronas from "../components/carona/carrosselcaronas/CarrosselCaronas";
 import { TempoViagem } from "../components/tempoviagem/TempoViagem";
 
-
 export function Home() {
   const [cidades, setCidades] = useState<string[]>([]);
   const [origem, setOrigem] = useState("");
@@ -201,9 +200,8 @@ export function Home() {
         <button className="bg-white rounded-2xl p-4 w-1/3 font-bold text-md mx-auto text-black cursor-pointer hover:bg-cyan-50">
           Oferecer carona
         </button>
-        
       </div>
-      <TempoViagem />
+      {/* <TempoViagem /> */}
       <div className="flex flex-col items-center my-12 gap-12">
         <div className="flex gap-8">
           <img src="/img/banner/app.png" className="w-1/2 rounded-3xl" alt="foto do app" />
@@ -244,6 +242,9 @@ export function Home() {
               R$2000 por ano só de gasolina!"
             </p>
             <button className="rounded-3xl bg-amber-500 text-white p-4 cursor-pointer w-1/7">Partiu!</button>
+            <div className="pt-[1.1rem]">
+              <TempoViagem />
+            </div>
           </div>
         </div>
       </div>

@@ -8,9 +8,9 @@ function CardCarona({ carona }: CardCaronaProps) {
   return (
     <div className="flex flex-col w-[20rem] mx-auto justify-center  shadow-md rounded-2xl overflow-hidden pb-4">
       {/* Imagem destino */}
-      <div className="">
+      <div className="w-[400px] h-[200px] bg-gray-200 overflow-hidden shadow-sm">
         {/* Implementar foto do destino na model e na entity do backend */}
-        <img className="flex justify-center shadow" src={carona.Foto_destino} alt="recife" />
+        <img className="w-full h-full object-cover" src={carona.Foto_destino} alt="recife" />
       </div>
       <div className="px-4 flex gap-2">
         <div className="mt-1 flex flex-col justify-center items-center ">
@@ -33,11 +33,26 @@ function CardCarona({ carona }: CardCaronaProps) {
         <div className="flex ">
           <div className="flex flex-col">
             <p>A partir de</p>
-            <h1 className="text-3xl">R$:{carona.valor}</h1>
+            <h1 className="text-3xl text-slate-900 font-bold">
+              {(() => {
+                const valorFormatado = new Intl.NumberFormat("pt-BR", {
+                  style: "currency",
+                  currency: "BRL",
+                }).format(carona.valor);
+
+                // separa em duas partes: "R$ 34" e "00"
+                const [inteiro, decimal] = valorFormatado.split(",");
+
+                return (
+                  <>
+                    {inteiro}
+                    <span className="text-xl align-top">,{decimal}</span>
+                  </>
+                );
+              })()}
+            </h1>
           </div>
-          <div>
-            <button>seta</button>
-          </div>
+          <div>{/* <button>seta</button> */}</div>
         </div>
       </div>
     </div>
