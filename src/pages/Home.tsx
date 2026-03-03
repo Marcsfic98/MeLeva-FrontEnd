@@ -8,6 +8,8 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { FaVanShuttle } from "react-icons/fa6";
+import { TempoViagem } from "../components/tempoviagem/TempoViagem";
+
 
 export function Home() {
   const [cidades, setCidades] = useState<string[]>([]);
@@ -227,9 +229,10 @@ export function Home() {
         <button className="bg-white rounded-2xl p-4 w-1/3 font-bold text-md mx-auto text-black cursor-pointer hover:bg-cyan-50">
           Oferecer carona
         </button>
+        
       </div>
-
-      <div className="flex-col flex items-center my-45 gap-30">
+      <TempoViagem />
+      <div className="flex flex-col items-center my-12 gap-12">
         <div className="flex gap-8">
           <img
             src="/img/banner/app.png"
